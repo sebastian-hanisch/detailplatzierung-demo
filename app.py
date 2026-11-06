@@ -272,8 +272,8 @@ with st.expander("📐 Mathematische Formulierung"):
 Jeder Schritt bewertet $\binom{n}{2}$ Anordnungen; mit $k$ Schritten sind es $(k+1)\binom{n}{2}$ **Bewertungen** (der letzte Durchlauf ohne Verbesserung zählt mit). Das Ende ist ein **lokales Optimum** der Tauschnachbarschaft.
 
 **Simulated Annealing.** Je Zug ein gleichverteilt zufälliger Tausch $(a, b)$; mit $\Delta = \mathrm{cost}(\pi^{(a,b)}) - \mathrm{cost}(\pi)$ wird er angenommen, wenn $\Delta \le 0$ oder mit der Wahrscheinlichkeit $e^{-\Delta/T}$. Die Temperatur fällt geometrisch,
-$$T_t = t_0 s \left( \frac{T_{\mathrm{end}}}{t_0} \right)^{t/(B-1)}, \qquad s = \frac{1}{\binom{n}{2}} \sum_{a<b} \left| \mathrm{cost}(\pi^{(a,b)}) - \mathrm{cost}(\pi) \right|$$
-für die Startanordnung $\pi$, $B$ Züge, $T_{\mathrm{end}} = 0{,}01\,s$. Ergebnis ist die beste besuchte Anordnung. Ein Zug zählt als eine Bewertung.
+$$T_t = t_0 s \left( \frac{0{,}01}{t_0} \right)^{t/(B-1)}, \qquad s = \frac{1}{\binom{n}{2}} \sum_{a<b} \left| \mathrm{cost}(\pi^{(a,b)}) - \mathrm{cost}(\pi) \right|$$
+für die Startanordnung $\pi$, $B$ Züge, also $T_0 = t_0 s$ und $T_{B-1} = 0{,}01\,s$. Ergebnis ist die beste besuchte Anordnung. Ein Zug zählt als eine Bewertung.
 
 **Gleicher Aufwand.** Die Neustarts rechnen $k$ Abstiege aus zufälligen Startanordnungen und nehmen den besten Wert; die Gesamtzahl der Bewertungen ist die Summe über die Abstiege.
 
