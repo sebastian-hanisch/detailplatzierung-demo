@@ -1,9 +1,8 @@
 # Detailplatzierung – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-detailplatzierung-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-detailplatzierung-demo.streamlit.app/)**
 
-Stück 12 von 15 der **Konzepte-Reihe „Anordnen: relaxieren und runden“** für die Website „Sebastian Hanisch – Operations Research und Machine Learning“ (die Konzepte-Seite der Reihe gibt es noch nicht). Die Stücke [9, Quadratische Platzierung](https://github.com/sebastian-hanisch/quadratische-platzierung-demo), und [10, Look-ahead-Legalisierung](https://github.com/sebastian-hanisch/look-ahead-legalisierung-demo), liefern eine **legale** Anordnung (Rundung der Platzierung, Ergebnis der Schleife). Dieses Stück fragt, **wie viel die letzte Meile bringt** (Kante der Reihe: Gegenprobe zu Stück 10): ein **Tauschabstieg** und **Simulated Annealing** mit Tauschzügen verbessern diese Anordnung, und gemessen werden die Lücke zum Optimum und der Aufwand in **Bewertungen**, je nach Startlösung. Abstieg und Annealing erklärt die Trajektorien-Linie (dort an einer Lieferroute), hier werden sie **angewendet**.
+Stück 12 von 15 der **Konzepte-Reihe „Anordnen: relaxieren und runden“** für die Website „Sebastian Hanisch – Operations Research und Machine Learning“ (die [Konzepte-Seite der Reihe](https://sebastianhanisch.net/konzepte-anordnen.html)). Die Stücke [9, Quadratische Platzierung](https://github.com/sebastian-hanisch/quadratische-platzierung-demo), und [10, Look-ahead-Legalisierung](https://github.com/sebastian-hanisch/look-ahead-legalisierung-demo), liefern eine **legale** Anordnung (Rundung der Platzierung, Ergebnis der Schleife). Dieses Stück fragt, **wie viel die letzte Meile bringt** (Kante der Reihe: Gegenprobe zu Stück 10): ein **Tauschabstieg** und **Simulated Annealing** mit Tauschzügen verbessern diese Anordnung, und gemessen werden die Lücke zum Optimum und der Aufwand in **Bewertungen**, je nach Startlösung. Abstieg und Annealing erklärt die Trajektorien-Linie (dort an einer Lieferroute), hier werden sie **angewendet**.
 
 ## Warum dieses Problem
 
